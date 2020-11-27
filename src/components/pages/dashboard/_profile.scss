@@ -1,4 +1,13 @@
-
+@mixin limit_lines($lines: 4) {
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-break: break-word;
+    text-overflow: ellipsis;
+    font-family: Arial;
+    font-weight: 500;
+    }
 .container-profile{
     background-color: #fff7f7f7;
     width: 100%;
@@ -76,6 +85,64 @@
         .infor-profile{
             flex-direction: column;
         }
+        }
+
+        .column{
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+           > div{
+               position: relative;
+               max-width: 20%;
+               padding-top: -20px !important;
+               margin-bottom: 10px;
+                &::after{
+                    content: '\2807';
+                    font-size: 22px;
+                    top:0px;
+                    right: 0px;
+                    position: absolute;
+                }
+                min-width: 200px;
+                //width: 20%;
+                .card-detail{
+                    font-size: 10px;
+                    margin-top: 5px;
+                }
+                .content{
+                    @include limit_lines(4);
+                    display: -webkit-box;
+                    -webkit-line-clamp: 4;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    word-break: break-word;
+                    text-overflow: ellipsis;
+                    
+                }
+                .ant-card-body {
+                    padding-top:10px;
+                }
+                .project-leader{
+                    margin-top: 10px;
+
+                }
+                .deadline{
+                    margin-top: 10px;
+                }
+                .team{
+                    div{
+                        display: flex;
+                    }
+                }
+                .progress{
+                    .progress-border{
+                        height: 10px;
+                    }
+                }
+
+            }
         }
 
     }

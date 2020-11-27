@@ -1,7 +1,7 @@
 import React from 'react'
 import './_login.scss'
 import { useForm } from 'react-hook-form'
-import image from "../../../assets/download.png"
+import image from "assets/download.png"
 export default function Login() {
     const { register, handleSubmit, errors } = useForm();
     const onSubmit = data => {
