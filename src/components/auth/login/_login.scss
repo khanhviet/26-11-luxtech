@@ -1,0 +1,47 @@
+.container-login{
+    width: 880px;
+    min-height: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    min-width: 315px;
+    .image-login{
+        padding:40px 0;
+    }
+    .inner-login{
+        margin-top: 100px;
+        background-color: white;
+        margin: 0 20px;
+        padding-top:20px;
+        a{
+            text-decoration: none;
+        }
+        h3{
+            font-weight: 400;
+        }
+        .form-login{
+
+              margin:0 30px;
+        }
+        input[type=email], input[type=password] ,input[type=submit]{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+          }
+        input[type=submit]{
+            background-image: linear-gradient(to right,#00bdfe,#2f6ee4, #3e10d0);
+            color: white;
+            font-size: 23px;
+            border:none;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .container-login{
+        width: 87%;
+    }
+  }
+  @media (max-width: 486px) {
+    .container-login{
+        width: 90%;
+    }
+  }
