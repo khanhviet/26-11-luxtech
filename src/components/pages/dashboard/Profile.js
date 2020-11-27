@@ -50,7 +50,7 @@ export default function Profile() {
                     </div>
                 </div>
                 <div className="project">
-                    <div> project </div>
+                    <div>Project </div>
                 </div>
                 <div className="column">
                     <Card>
