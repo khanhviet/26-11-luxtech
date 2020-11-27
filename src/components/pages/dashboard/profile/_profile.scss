@@ -144,6 +144,14 @@
 
             }
         }
+        @media (max-width:438px) {
+            .column{
+                justify-content: center;
+                >div{
+                   min-width: 100%;
+                }
+            }    
+        }
 
     }
     

@@ -1,0 +1,13 @@
+.container-clients{
+    .auto-margin{
+        margin:0 20px;
+        .container-card{
+            display: flex;
+            flex-wrap: wrap;
+            >div{
+                width: 300px;
+    
+            }
+        }
+    }
+}

@@ -1,8 +1,9 @@
 import React from 'react'
-import imgProfile from '../../../assets/profile.jpg'
+import imgProfile from 'assets/profile.jpg'
 import './_profile.scss';
 import { Card } from 'antd';
 import imageLeader from 'assets/leader.jpg'
+import { Progress } from 'antd';
 export default function Profile() {
     return (
         <div className="container-profile">
@@ -82,16 +83,7 @@ export default function Profile() {
                                 <img style={{ width: '100%', height: '100%', borderRadius: '50%' }} src={imageLeader} alt="" />
                             </div>
                         </div>
-                        <div className="progress">
-                            <div style={{ float: 'left' }}>Progress</div>
-                            <div style={{ float: "right", color: 'green' }}>
-                                40%
-                            </div>
-                            <div style={{ clear: 'both' }}></div>
-                            <div className="progress-border">
-                                <div style={{ height: '100%', width: '50%', backgroundColor: 'green' }} > </div>
-                            </div>
-                        </div>
+                        <Progress percent={75} />
                     </Card>
                     <Card>
 
