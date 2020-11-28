@@ -21,13 +21,23 @@
         margin-top: 15px
     }
     form{
-        
         .column{
             display: flex;
             justify-content: center;
-            >div{
+            .inner-column{
                 width: 50%;
                 margin: 0 10px;
+                .text-left{
+                    text-align: left;
+                }
+                .required{
+                    &::after{
+                        content: '*';
+                        margin-left: 5px;
+                        padding: 0 5px;
+                        color: red;
+                    }
+                }
                 div{
                     width: 100%;
 

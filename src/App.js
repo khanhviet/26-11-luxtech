@@ -11,7 +11,7 @@ function App() {
         <Route path="/login" component={Login}></Route>
         <Route path="/dashboard/clients" component={Client}></Route>
         <Route path="/dashboard/profile" component={Profile}></Route>
-        <Route path="/dashboard/clients" component={AddClient}></Route>
+        <Route path="/dashboard/addclients" component={AddClient}></Route>
       </Switch>
     </BrowserRouter>
   );

@@ -6,12 +6,12 @@ export default function AddClient() {
         <div>
             <div className="main"></div>
             <div className="alert-add-client">
-                <span class="close">&times;</span>
+                <span className="close">&times;</span>
                 <h1>Add client</h1>
                 <Form>
                     <div className="column">
-                        <div>
-                            <div style={{ textAlign: 'left' }}>Firstname</div>
+                        <div className='inner-column'>
+                            <div className="text-left required">Firstname</div>
                             <Form.Item
 
                                 rules={[
@@ -20,13 +20,13 @@ export default function AddClient() {
                                     },
                                 ]}
                             >
-                                <Input style={
+                                <Input className='required' style={
                                     {
                                         height: "50px"
                                     }
                                 } />
                             </Form.Item>
-                            <div style={{ textAlign: 'left' }}>Email</div>
+                            <div className='text-left required'>Email</div>
                             <Form.Item
                                 rules={[
                                     {
@@ -40,7 +40,7 @@ export default function AddClient() {
                                     }
                                 } />
                             </Form.Item>
-                            <div style={{ textAlign: 'left' }}>Phone</div>
+                            <div className="text-left">Phone</div>
                             <Form.Item
                                 rules={[
                                     {
@@ -55,8 +55,8 @@ export default function AddClient() {
                                 } />
                             </Form.Item>
                         </div>
-                        <div>
-                            <div style={{ textAlign: 'left' }}>Last Name</div>
+                        <div className='inner-column'>
+                            <div className="text-left">Last Name</div>
                             <Form.Item
                                 rules={[
                                     {
@@ -70,7 +70,7 @@ export default function AddClient() {
                                     }
                                 } />
                             </Form.Item>
-                            <div style={{ textAlign: 'left' }}>Client ID</div>
+                            <div className="text-left required">Client ID</div>
                             <Form.Item
                                 rules={[
                                     {
@@ -84,7 +84,7 @@ export default function AddClient() {
                                     }
                                 } />
                             </Form.Item>
-                            <div style={{ textAlign: 'left' }}>Company Name</div>
+                            <div className='text-left'>Company Name</div>
                             <Form.Item
                                 rules={[
                                     {
@@ -104,6 +104,6 @@ export default function AddClient() {
                     <Button>Submit</Button>
                 </Form>
             </div>
-        </div>
+        </div >
     )
 }
