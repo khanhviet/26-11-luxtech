@@ -1,13 +1,13 @@
 import React from 'react'
-import './_addclient.scss'
 import { Form, Input, Button } from 'antd';
-export default function AddClient() {
+import './_addemployee.scss'
+export default function AddEmployee() {
     return (
         <div>
             <div className="main"></div>
             <div className="alert-add-client">
                 <span className="close">&times;</span>
-                <h1>Add client</h1>
+                <h1>Add Employee</h1>
                 <Form>
                     <div className="column">
                         <div className='inner-column'>
@@ -40,7 +40,7 @@ export default function AddClient() {
                                     }
                                 } />
                             </Form.Item>
-                            <div className="text-left">Phone</div>
+                            <div className="text-left required">Employee ID</div>
                             <Form.Item
                                 rules={[
                                     {
@@ -49,6 +49,20 @@ export default function AddClient() {
                                 ]}
                             >
                                 <Input style={
+                                    {
+                                        height: "50px"
+                                    }
+                                } />
+                            </Form.Item>
+                            <div className="text-left required">Date Of Birth</div>
+                            <Form.Item
+                                rules={[
+                                    {
+                                        required: true,
+                                    },
+                                ]}
+                            >
+                                <Input type='date' style={
                                     {
                                         height: "50px"
                                     }
@@ -70,7 +84,7 @@ export default function AddClient() {
                                     }
                                 } />
                             </Form.Item>
-                            <div className="text-left required">Client ID</div>
+                            <div className="text-left">Password</div>
                             <Form.Item
                                 rules={[
                                     {
@@ -84,7 +98,7 @@ export default function AddClient() {
                                     }
                                 } />
                             </Form.Item>
-                            <div className='text-left'>Company Name</div>
+                            <div className="text-left">Phone</div>
                             <Form.Item
                                 rules={[
                                     {
@@ -93,6 +107,20 @@ export default function AddClient() {
                                 ]}
                             >
                                 <Input style={
+                                    {
+                                        height: "50px"
+                                    }
+                                } />
+                            </Form.Item>
+                            <div className='text-left'>Joining Date</div>
+                            <Form.Item
+                                rules={[
+                                    {
+                                        required: true,
+                                    },
+                                ]}
+                            >
+                                <Input type='date' style={
                                     {
                                         height: "50px"
                                     }

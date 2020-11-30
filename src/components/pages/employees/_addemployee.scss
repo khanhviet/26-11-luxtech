@@ -1,0 +1,61 @@
+.alert-add-client{
+    text-align: center;
+    margin:auto;
+    width: 60%;
+    background-color: white;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 20px;
+    border: 1px solid wheat;
+    .close {
+        cursor: pointer;
+        font-size: 25px;
+        margin-right: 10px;
+        float: right;
+      }
+      h1{
+        margin-top: 15px
+    }
+    form{
+        .column{
+            display: flex;
+            justify-content: center;
+            .inner-column{
+                width: 50%;
+                margin: 0 10px;
+                .text-left{
+                    text-align: left;
+                }
+                .required{
+                    &::after{
+                        content: '*';
+                        margin-left: 5px;
+                        padding: 0 5px;
+                        color: red;
+                    }
+                }
+                div{
+                    width: 100%;
+
+                }
+            }
+            
+            input{
+                width: 100%;
+            }
+        }
+        button{
+            width: 200px;
+            height: 50px;
+            background-color: #00beff;
+            color: white;
+            font-weight: bold;
+            border-radius: 30px;
+            margin-bottom: 20px;
+        }
+    }
+}
