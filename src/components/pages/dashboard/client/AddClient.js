@@ -20,11 +20,7 @@ export default function AddClient() {
                                     },
                                 ]}
                             >
-                                <Input style={
-                                    {
-                                        height: "50px"
-                                    }
-                                } />
+                                <Input />
                             </Form.Item>
                             <div className='text-left required'>Email</div>
                             <Form.Item
@@ -34,11 +30,7 @@ export default function AddClient() {
                                     },
                                 ]}
                             >
-                                <Input style={
-                                    {
-                                        height: "50px"
-                                    }
-                                } />
+                                <Input />
                             </Form.Item>
                             <div className="text-left">Phone</div>
                             <Form.Item
@@ -48,11 +40,7 @@ export default function AddClient() {
                                     },
                                 ]}
                             >
-                                <Input style={
-                                    {
-                                        height: "50px"
-                                    }
-                                } />
+                                <Input />
                             </Form.Item>
                         </div>
                         <div className='inner-column'>
@@ -64,11 +52,7 @@ export default function AddClient() {
                                     },
                                 ]}
                             >
-                                <Input style={
-                                    {
-                                        height: "50px"
-                                    }
-                                } />
+                                <Input />
                             </Form.Item>
                             <div className="text-left required">Client ID</div>
                             <Form.Item
@@ -78,11 +62,7 @@ export default function AddClient() {
                                     },
                                 ]}
                             >
-                                <Input style={
-                                    {
-                                        height: "50px"
-                                    }
-                                } />
+                                <Input />
                             </Form.Item>
                             <div className='text-left'>Company Name</div>
                             <Form.Item
@@ -92,11 +72,8 @@ export default function AddClient() {
                                     },
                                 ]}
                             >
-                                <Input style={
-                                    {
-                                        height: "50px"
-                                    }
-                                } />
+                                <Input
+                                />
                             </Form.Item>
 
                         </div>

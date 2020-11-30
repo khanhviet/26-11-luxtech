@@ -9,25 +9,24 @@ export default function Profile() {
         <div className="container-profile">
             <div className='auto-margin'>
                 <div className="breadcrumb">
-                    <h1 style={{ margin: '0px' }}>Profile</h1>
-                    <h3 style={{ margin: '0px', fontWeight: '200' }}>DashBoard / Profile</h3>
+                    <h1 >Profile</h1>
+                    <h3>DashBoard / Profile</h3>
                 </div>
                 <div className="infor-profile">
                     <div className="infor-person">
-                        <div> <img src={imgProfile} style={{ borderRadius: '50%' }} alt='avatar'></img>
-                        </div>
+                        <img className='im-avatar' src={imgProfile} alt='avatar'></img>
                         <div className="right">
                             <h2>Global Technologies</h2>
-                            <div style={{ fontWeight: 'bold' }}>barry Cuda</div>
+                            <div><strong>barry Cuda</strong></div>
                             <div className="ceo">CEO</div>
                             <br />
-                            <div fontWeight={{ fontWeight: 'bold' }}>EmployeeID: CLT-001</div>
+                            <div className='employeeID' >EmployeeID: CLT-001</div>
                             <button>Send Message</button>
                         </div>
                     </div>
                     <div className="border-center" ></div>
                     <div className="detail-person">
-                        <div style={{ minWidth: '100px', width: "50%" }}>
+                        <div className='detail-person-item-l'>
                             <div>Phone:</div>
                             <br />
                             <div>Email:</div>
@@ -55,7 +54,7 @@ export default function Profile() {
                 </div>
                 <div className="column">
                     <Card>
-                        <h2 style={{ margin: '0px' }}>Office management</h2>
+                        <h2 >Office management</h2>
                         <div className="card-detail">
                             <strong>1</strong>
                             <span> open tasks, </span>
@@ -69,25 +68,26 @@ export default function Profile() {
                         </div>
                         <div className="project-leader">
                             <h4>Project leader</h4>
-                            <div style={{ width: '30px', height: '30px' }} >
-                                <img style={{ width: '100%', height: '100%', borderRadius: '50%' }} src={imageLeader} alt="" />
-                            </div>
+                            <img src={imageLeader} alt="" />
                         </div>
+                        <br />
                         <div className="team">
                             <h4>Team: </h4>
-                            <div style={{ width: '30px', height: '30px' }} >
-                                <img style={{ width: '100%', height: '100%', borderRadius: '50%' }} src={imageLeader} alt="" />
-                                <img style={{ width: '100%', height: '100%', borderRadius: '50%' }} src={imageLeader} alt="" />
-                                <img style={{ width: '100%', height: '100%', borderRadius: '50%' }} src={imageLeader} alt="" />
-                                <img style={{ width: '100%', height: '100%', borderRadius: '50%' }} src={imageLeader} alt="" />
-                                <img style={{ width: '100%', height: '100%', borderRadius: '50%' }} src={imageLeader} alt="" />
+                            <div className='team-img' >
+                                <img src={imageLeader} alt="" />
+                                <img src={imageLeader} alt="" />
+                                <img src={imageLeader} alt="" />
+                                <img src={imageLeader} alt="" />
+                                <img src={imageLeader} alt="" />
                             </div>
                         </div>
+                        <br />
+                        <h4>Progress</h4>
                         <Progress percent={75} />
                     </Card>
                     <Card>
 
-                        <h2 style={{ margin: '0px' }}>Project Management</h2>
+                        <h2 >Project Management</h2>
                         <div className="card-detail">
                             <strong>1</strong>
                             <span> open tasks, </span>
@@ -101,30 +101,22 @@ export default function Profile() {
                         </div>
                         <div className="project-leader">
                             <h4>Project leader</h4>
-                            <div style={{ width: '30px', height: '30px' }} >
-                                <img style={{ width: '100%', height: '100%', borderRadius: '50%' }} src={imageLeader} alt="" />
-                            </div>
+                            <img src={imageLeader} alt="" />
                         </div>
+                        <br />
                         <div className="team">
                             <h4>Team: </h4>
-                            <div style={{ width: '30px', height: '30px' }} >
-                                <img style={{ width: '100%', height: '100%', borderRadius: '50%' }} src={imageLeader} alt="" />
-                                <img style={{ width: '100%', height: '100%', borderRadius: '50%' }} src={imageLeader} alt="" />
-                                <img style={{ width: '100%', height: '100%', borderRadius: '50%' }} src={imageLeader} alt="" />
-                                <img style={{ width: '100%', height: '100%', borderRadius: '50%' }} src={imageLeader} alt="" />
-                                <img style={{ width: '100%', height: '100%', borderRadius: '50%' }} src={imageLeader} alt="" />
+                            <div className='team-img' >
+                                <img src={imageLeader} alt="" />
+                                <img src={imageLeader} alt="" />
+                                <img src={imageLeader} alt="" />
+                                <img src={imageLeader} alt="" />
+                                <img src={imageLeader} alt="" />
                             </div>
                         </div>
-                        <div className="progress">
-                            <div style={{ float: 'left' }}>Progress</div>
-                            <div style={{ float: "right", color: 'green' }}>
-                                40%
-                            </div>
-                            <div style={{ clear: 'both' }}></div>
-                            <div className="progress-border">
-                                <div style={{ height: '100%', width: '50%', backgroundColor: 'green' }} > </div>
-                            </div>
-                        </div>
+                        <br />
+                        <h4>Progress</h4>
+                        <Progress percent={75} />
 
                     </Card>
                     <Card >
@@ -142,21 +134,23 @@ export default function Profile() {
                         </div>
                         <div className="project-leader">
                             <h4>Project leader</h4>
-                            <div style={{ width: '30px', height: '30px' }} >
-                                <img style={{ width: '100%', height: '100%', borderRadius: '50%' }} src={imageLeader} alt="" />
-                            </div>
+                            <img src={imageLeader} alt="" />
                         </div>
+                        <br />
                         <div className="team">
                             <h4>Team: </h4>
-                            <div style={{ width: '30px', height: '30px' }} >
-                                <img style={{ width: '100%', height: '100%', borderRadius: '50%' }} src={imageLeader} alt="" />
-                                <img style={{ width: '100%', height: '100%', borderRadius: '50%' }} src={imageLeader} alt="" />
-                                <img style={{ width: '100%', height: '100%', borderRadius: '50%' }} src={imageLeader} alt="" />
-                                <img style={{ width: '100%', height: '100%', borderRadius: '50%' }} src={imageLeader} alt="" />
-                                <img style={{ width: '100%', height: '100%', borderRadius: '50%' }} src={imageLeader} alt="" />
+                            <div className='team-img' >
+                                <img src={imageLeader} alt="" />
+                                <img src={imageLeader} alt="" />
+                                <img src={imageLeader} alt="" />
+                                <img src={imageLeader} alt="" />
+                                <img src={imageLeader} alt="" />
                             </div>
                         </div>
-                        <div className="progress">
+                        <br />
+                        <h4>Progress</h4>
+                        <Progress percent={75} />
+                        {/* <div className="progress">
                             <div style={{ float: 'left' }}>Progress</div>
                             <div style={{ float: "right", color: 'green' }}>
                                 40%
@@ -165,7 +159,7 @@ export default function Profile() {
                             <div className="progress-border">
                                 <div style={{ height: '100%', width: '50%', backgroundColor: 'green' }} > </div>
                             </div>
-                        </div>
+                        </div> */}
 
                     </Card>
                     <Card >
@@ -183,21 +177,23 @@ export default function Profile() {
                         </div>
                         <div className="project-leader">
                             <h4>Project leader</h4>
-                            <div style={{ width: '30px', height: '30px' }} >
-                                <img style={{ width: '100%', height: '100%', borderRadius: '50%' }} src={imageLeader} alt="" />
-                            </div>
+                            <img src={imageLeader} alt="" />
                         </div>
+                        <br />
                         <div className="team">
                             <h4>Team: </h4>
-                            <div style={{ width: '30px', height: '30px' }} >
-                                <img style={{ width: '100%', height: '100%', borderRadius: '50%' }} src={imageLeader} alt="" />
-                                <img style={{ width: '100%', height: '100%', borderRadius: '50%' }} src={imageLeader} alt="" />
-                                <img style={{ width: '100%', height: '100%', borderRadius: '50%' }} src={imageLeader} alt="" />
-                                <img style={{ width: '100%', height: '100%', borderRadius: '50%' }} src={imageLeader} alt="" />
-                                <img style={{ width: '100%', height: '100%', borderRadius: '50%' }} src={imageLeader} alt="" />
+                            <div className='team-img' >
+                                <img src={imageLeader} alt="" />
+                                <img src={imageLeader} alt="" />
+                                <img src={imageLeader} alt="" />
+                                <img src={imageLeader} alt="" />
+                                <img src={imageLeader} alt="" />
                             </div>
                         </div>
-                        <div className="progress">
+                        <br />
+                        <h4>Progress</h4>
+                        <Progress percent={75} />
+                        {/* <div className="progress">
                             <div style={{ float: 'left' }}>Progress</div>
                             <div style={{ float: "right", color: 'green' }}>
                                 40%
@@ -206,7 +202,7 @@ export default function Profile() {
                             <div className="progress-border">
                                 <div style={{ height: '100%', width: '50%', backgroundColor: 'green' }} > </div>
                             </div>
-                        </div>
+                        </div> */}
                     </Card>
                 </div>
             </div>

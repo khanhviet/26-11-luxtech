@@ -43,6 +43,11 @@
                 .fa-dollar{
                     font-size: 20px;
                 }
+                .percent{
+                    float: right;
+                    color: red;
+                    font-weight: bold;
+                }
             }
             @media  (max-width:768px){
                         .antd-card{
@@ -79,6 +84,18 @@
                        .setWidth{
                            width: 31%;
                        }
+                       th{
+                           .row-avatar{
+                               float: left;
+                               border-radius: 50%;
+                               width: 40px;
+                               height: 40px;
+                           }
+                        span{
+                            opacity: 0.6;
+                        }
+                       }
+                   
                     }
                 }
             }
@@ -114,6 +131,10 @@
                                 strong{
                     font-size: 10px;
                                 }
+                            }
+                            .img-dot{
+                                float: right;
+                                margin-right: 5px;
                             }
                         }
                     }

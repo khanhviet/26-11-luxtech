@@ -14,15 +14,15 @@ export default function Login() {
                 <h1 className="title">Login</h1>
                 <h3> Access to our dashboard</h3>
                 <form className="form-login" onSubmit={handleSubmit(onSubmit)}>
-                    <label htmlFor="email" style={{ float: 'left' }}>Email Address</label>
+                    <label htmlFor="email" className='f-l'>Email Address</label>
                     <input type="email" id="email" name="email" ref={register({
                         required: true
                     })} />
                     {errors.name && errors.name.type === "required" && <span>This is required</span>}
                     <br />
                     <br />
-                    <label htmlFor="password" style={{ float: 'left' }}>Password</label>
-                    <a href="/" style={{ float: 'right' }}>forgot password</a>
+                    <label className='f-l' htmlFor="password">Password</label>
+                    <a href="/" className='f-r' >forgot password</a>
                     <input type="password" id="password" name="password" />
                     <br />
                     <br />

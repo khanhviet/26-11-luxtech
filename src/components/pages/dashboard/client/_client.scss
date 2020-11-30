@@ -23,6 +23,21 @@
                 width: 400px;
                 margin-top: 40px;
                 margin-right: 40px;
+                .card-content{
+                    margin: 0;
+                    text-align: center;
+                    .f-r{
+                        float: right;
+                    }
+                    .im-avatar{
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 50%;
+                       
+                    }
+                    .ceo{
+                        opacity: 0.6;
+                    }
                 .btn{
                     font-size: 17px;
                     margin-top: 10px;
@@ -31,6 +46,7 @@
                 }
                 .btn-message{
                     margin-right: 15px;
+                }
                 }
             }
         }

@@ -5,7 +5,7 @@ export default function AddEmployee() {
     return (
         <div>
             <div className="main"></div>
-            <div className="alert-add-client">
+            <div className="alert-add-employee">
                 <span className="close">&times;</span>
                 <h1>Add Employee</h1>
                 <Form>
@@ -20,11 +20,8 @@ export default function AddEmployee() {
                                     },
                                 ]}
                             >
-                                <Input style={
-                                    {
-                                        height: "50px"
-                                    }
-                                } />
+                                <Input
+                                />
                             </Form.Item>
                             <div className='text-left required'>Email</div>
                             <Form.Item
@@ -34,11 +31,7 @@ export default function AddEmployee() {
                                     },
                                 ]}
                             >
-                                <Input style={
-                                    {
-                                        height: "50px"
-                                    }
-                                } />
+                                <Input />
                             </Form.Item>
                             <div className="text-left required">Employee ID</div>
                             <Form.Item
@@ -48,11 +41,7 @@ export default function AddEmployee() {
                                     },
                                 ]}
                             >
-                                <Input style={
-                                    {
-                                        height: "50px"
-                                    }
-                                } />
+                                <Input />
                             </Form.Item>
                             <div className="text-left required">Date Of Birth</div>
                             <Form.Item
@@ -62,11 +51,7 @@ export default function AddEmployee() {
                                     },
                                 ]}
                             >
-                                <Input type='date' style={
-                                    {
-                                        height: "50px"
-                                    }
-                                } />
+                                <Input />
                             </Form.Item>
                         </div>
                         <div className='inner-column'>
@@ -78,11 +63,7 @@ export default function AddEmployee() {
                                     },
                                 ]}
                             >
-                                <Input style={
-                                    {
-                                        height: "50px"
-                                    }
-                                } />
+                                <Input />
                             </Form.Item>
                             <div className="text-left">Password</div>
                             <Form.Item
@@ -92,11 +73,7 @@ export default function AddEmployee() {
                                     },
                                 ]}
                             >
-                                <Input style={
-                                    {
-                                        height: "50px"
-                                    }
-                                } />
+                                <Input />
                             </Form.Item>
                             <div className="text-left">Phone</div>
                             <Form.Item
@@ -106,11 +83,7 @@ export default function AddEmployee() {
                                     },
                                 ]}
                             >
-                                <Input style={
-                                    {
-                                        height: "50px"
-                                    }
-                                } />
+                                <Input />
                             </Form.Item>
                             <div className='text-left'>Joining Date</div>
                             <Form.Item
@@ -120,11 +93,7 @@ export default function AddEmployee() {
                                     },
                                 ]}
                             >
-                                <Input type='date' style={
-                                    {
-                                        height: "50px"
-                                    }
-                                } />
+                                <Input />
                             </Form.Item>
 
                         </div>

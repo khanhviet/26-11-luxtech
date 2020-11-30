@@ -38,13 +38,13 @@ export default function Index() {
                 </div>
                 <div className='row-true'>
                     <Card className="antd-card">
-                        <div style={{ float: "right", color: 'red', fontWeight: 'bold' }}>+10%</div>
+                        <span className='percent'>+10%</span>
                         <h4>New Employees</h4>
                         <h3>10</h3>
                         <Progress percent={40} showInfo={false}></Progress>
                     </Card>
                     <Card className="antd-card">
-                        <div style={{ float: "right", color: 'red', fontWeight: 'bold' }}>+10%</div>
+                        <span className='percent'>+10%</span>
                         <h4>New Employees</h4>
                         <h3>
                             <i class="fa fa-dollar" style={{ color: "black" }}></i>
@@ -52,7 +52,7 @@ export default function Index() {
                         <Progress percent={40} showInfo={false}></Progress>
                     </Card>
                     <Card className="antd-card">
-                        <div style={{ float: "right", color: 'red', fontWeight: 'bold' }}>+10%</div>
+                        <span className='percent'>+10%</span>
                         <h4>New Employees</h4>
                         <h3>
                             <i class="fa fa-dollar" style={{ color: "black" }}></i>
@@ -60,7 +60,7 @@ export default function Index() {
                         <Progress percent={40} showInfo={false}></Progress>
                     </Card>
                     <Card className="antd-card">
-                        <div style={{ float: "right", color: 'green', fontWeight: 'bold' }}>+10%</div>
+                        <span className='percent'>+10%</span>
                         <h4>New Employees</h4>
                         <h3>
                             <i class="fa fa-dollar" style={{ color: "black" }}></i>
@@ -80,9 +80,9 @@ export default function Index() {
                             </tr>
                             <tr>
                                 <th>
-                                    <img src={image} style={{ float: "left", borderRadius: '50%', width: '40px', height: '40px' }} alt=''></img>
+                                    <img className='row-avatar' src={image} alt=''></img>
                                     <div>Barry Cuda</div>
-                                    <span style={{ opacity: 0.6 }}>CEO</span>
+                                    <span>CEO</span>
                                 </th>
                                 <th>
                                     barry@gmail.com
@@ -117,14 +117,14 @@ export default function Index() {
                             </tr>
                             <tr>
                                 <th>
-                                    <h4 style={{ margin: 0, padding: 0 }}>Office Management</h4>
+                                    <h4 >Office Management</h4>
                                     <strong>1 </strong><span>open task, </span><strong>9</strong><span> task completed</span>
                                 </th>
                                 <th>
                                     <Progress percent={50} showInfo={false}></Progress>
                                 </th>
                                 <th>
-                                    <img src={imgDot} style={{ float: 'right', marginRight: '5px' }} alt=""></img>
+                                    <img className='img-dot' src={imgDot} alt=""></img>
                                 </th>
                             </tr>
                         </table>

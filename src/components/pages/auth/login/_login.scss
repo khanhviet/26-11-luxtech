@@ -21,6 +21,12 @@
         .form-login{
 
               margin:0 30px;
+              .f-l{
+                  float: left;
+              }
+              .f-r{
+                  float: right;
+              }
         }
         input[type=email], input[type=password] ,input[type=submit]{
             width: 100%;

@@ -15,7 +15,7 @@ function App() {
         <Route path="/dashboard/clients" component={Client}></Route>
         <Route path="/dashboard/profile" component={Profile}></Route>
         <Route path="/dashboard/addclients" component={AddClient}></Route>
-        <Route path='/enployees/addemployee' component={AddEmployee}></Route>
+        <Route path='/employees/addemployee' component={AddEmployee}></Route>
       </Switch>
     </BrowserRouter>
   );
