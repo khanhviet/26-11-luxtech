@@ -5,6 +5,8 @@ import AddClient from 'components/pages/dashboard/client/AddClient';
 import Client from 'components/pages/dashboard/client/Client';
 import Index from 'components/pages/dashboard/Index';
 import AddEmployee from 'components/pages/employees/AddEmployee';
+import Employee from 'components/pages/employees/Index';
+import CreateProject from 'components/pages/project/CreateProject';
 
 function App() {
   return (
@@ -15,7 +17,9 @@ function App() {
         <Route path="/dashboard/clients" component={Client}></Route>
         <Route path="/dashboard/profile" component={Profile}></Route>
         <Route path="/dashboard/addclients" component={AddClient}></Route>
-        <Route path='/employees/addemployee' component={AddEmployee}></Route>
+        <Route path='/dashboard/employee/add' component={AddEmployee}></Route>
+        <Route path='/dashboard/employee' component={Employee}></Route>
+        <Route path='/dashboard/project/createProject' component={CreateProject}></Route>
       </Switch>
     </BrowserRouter>
   );

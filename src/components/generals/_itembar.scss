@@ -1,0 +1,25 @@
+.antd-card{
+    width: 32%;
+        .dash-widget-icon{
+            width: 60px;
+            height: 60px;
+            float: left;
+            font-size: 25px;
+            color: #00c5fb;
+            border-radius: 50%;
+            background-color: #d4f3ff;
+            text-align: center;
+            line-height: 60px;
+        span{
+            margin:0 auto;
+        }
+    }
+    .dash-widget-infor{
+        float: right;
+    }
+}
+@media (max-width:540px) {
+    .antd-card{
+        width: 33,3333333%;
+    }
+}

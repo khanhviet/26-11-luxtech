@@ -1,0 +1,90 @@
+.alert-create-project{
+    margin:auto;
+    width: 60%;
+    background-color: white;
+    overflow: hidden;
+    // top: 50%;
+    // left: 50%;
+    // -ms-transform: translate(-50%, -50%);
+    // transform: translate(-50%, -50%);
+    // position: absolute;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: 1px solid wheat;
+    .close {
+        cursor: pointer;
+        font-size: 25px;
+        margin-right: 10px;
+        float: right;
+      }
+      h1{
+        margin-top: 15px;
+        text-align: center;
+    }
+    form{
+        .column{
+            display: flex;
+            justify-content: center;
+            .inner-column{
+                width: 50%;
+                margin: 0 10px;
+                .text-left{
+                    text-align: left;
+                }
+                .required{
+                    &::after{
+                        content: '*';
+                        margin-left: 5px;
+                        padding: 0 5px;
+                        color: red;
+                    }
+                }
+                .ant-select-selector{
+                    height: 50px;
+                }
+                div{
+                    width: 100%;
+
+                }
+                input{
+                    height: 50px;
+                }
+                // img{
+                //     margin: 10px 0;
+                //     width: 30px;
+                //     height: 30px;
+                //     border-radius: 50%;
+                //     float: left;
+                // }
+            }
+            
+            input{
+                width: 100%;
+            }
+        }
+        h4{
+            margin-left: 10px;
+        }
+        .textarea{
+            width: calc(100% - 20px);
+            height: 100px;
+            margin-left: 10px;
+        }
+        .container-btn{
+            text-align: center;
+            width: 100%;
+            .btn-submit{
+                margin-top: 20px;
+                margin-left: 10px;
+                width: 200px;
+                height: 50px;
+                background-color: #00beff;
+                color: white;
+                font-weight: bold;
+                border-radius: 30px;
+                margin-bottom: 20px;
+            }
+        }
+      
+    }
+}

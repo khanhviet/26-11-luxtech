@@ -51,7 +51,7 @@ export default function AddEmployee() {
                                     },
                                 ]}
                             >
-                                <Input />
+                                <Input type='date' />
                             </Form.Item>
                         </div>
                         <div className='inner-column'>
@@ -93,7 +93,7 @@ export default function AddEmployee() {
                                     },
                                 ]}
                             >
-                                <Input />
+                                <Input type='date' />
                             </Form.Item>
 
                         </div>

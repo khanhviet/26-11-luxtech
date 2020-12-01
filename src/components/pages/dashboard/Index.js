@@ -3,6 +3,7 @@ import './_index.scss'
 import { Progress, Card } from 'antd';
 import image from 'assets/leader.jpg';
 import imgDot from 'assets/dot.png';
+import Itembar from 'components/generals/Itembar';
 export default function Index() {
     return (
         <div className='container-dashboard'>
@@ -12,29 +13,9 @@ export default function Index() {
                     <h3 style={{ margin: '0px', fontWeight: '200' }}>DashBoard / Profile</h3>
                 </div>
                 <div className='row-one'>
-                    <Card className="antd-card">
-                        <span class="dash-widget-icon"><i class="fa fa-cubes"></i></span>
-                        <div className='dash-widget-infor'>
-                            <h2>112</h2>
-                            <span>Project</span>
-                        </div>
-                    </Card>
-                    <Card className="antd-card">
-
-                        <span class="dash-widget-icon"><i class="fa fa-usd"></i></span>
-
-                        <div className='dash-widget-infor'>
-                            <h2>112</h2>
-                            <span>Project</span>
-                        </div>
-                    </Card>
-                    <Card className="antd-card">
-                        <span class="dash-widget-icon"><i class="fa fa-cubes"></i></span>
-                        <div className='dash-widget-infor'>
-                            <h2>112</h2>
-                            <span>Project</span>
-                        </div>
-                    </Card>
+                    <Itembar name='project' number='112' className='cubes'></Itembar>
+                    <Itembar name='project' number='112' className='cubes'></Itembar>
+                    <Itembar name='project' number='112' className='cubes'></Itembar>
                 </div>
                 <div className='row-true'>
                     <Card className="antd-card">
