@@ -1,5 +1,5 @@
 import { Table } from 'antd'
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import './_index.scss'
 export default function Index() {
     const columns = [
@@ -369,34 +369,6 @@ export default function Index() {
     const fetch = (params = {}) => {
         setPagination({ ...params.pagination })
     }
-    // const getRandomuserParams = params => {
-    //     return {
-    //         results: params.pagination.pageSize,
-    //         page: params.pagination.current,
-    //         ...params,
-    //     };
-    // };
-    // const fetch = (params = {}) => {
-    //     this.setState({ loading: true });
-    //     reqwest({
-    //         url: 'https://randomuser.me/api',
-    //         method: 'get',
-    //         type: 'json',
-    //         data: this.getRandomuserParams(params),
-    //     }).then(data => {
-    //         console.log(data);
-    //         // this.setState({
-    //         //     loading: false,
-    //         //     data: data.results,
-    //         //     pagination: {
-    //         //         ...params.pagination,
-    //         //         total: 200,
-    //         //         // 200 is mock data, you should read it from server
-    //         //         // total: data.totalCount,
-    //         //     },
-    //         // });
-    //     });
-    // };
     return (
         <div className='container-employee'>
             <div className='m-x'>

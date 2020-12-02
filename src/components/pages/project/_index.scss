@@ -1,0 +1,189 @@
+@mixin limit_lines($lines: 4) {
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-break: break-word;
+    text-overflow: ellipsis;
+    font-family: Arial;
+    font-weight: 500;
+}
+
+.container-hospital {
+    .m-y {
+        margin: 20px;
+        .header-hospital {
+            padding-top: 20px;
+            padding-left: 5px;
+            .btn-edit-project {
+                float: right;
+                color: white;
+                border-radius: 20px;
+                background-color: #00beff;
+                border: none;
+                font-size: 20px;
+                width: 150px;
+                height: 40px;
+            }
+            .menu {
+                border: 1px solid gray;
+                width: 35px;
+                border-radius: 5px;
+                float: right;
+                height: 20px;
+                margin-right: 10px;
+                height: 36px;
+                svg {
+                    font-size: 23px;
+                    padding-top: 7px;
+                }
+            }
+            @media (max-width:360px) {
+                .menu{
+                    float:left;
+                }
+            }
+        }
+        .column-left {
+            width: 70%;
+            float: left;
+            .text-hospital {
+                width: 100%;
+                background-color: white;
+                padding: 20px;
+                border: 2px solid rgb(233, 233, 233);
+                border-radius: 7px;
+            }
+            .uploaded-img {
+                border: 2px solid rgb(233, 233, 233);
+                border-radius: 7px;
+                background-color: white;
+                margin-top: 30px;
+                padding: 30px 0;
+                h3 {
+                    margin: 0 0 10px 20px;
+                }
+                .container-img{
+                    display: inline-block;             
+                    width: 200px;               
+                    margin: 10px 20px;
+                    border-radius: 5px;
+                    padding:5px;
+                    border: 1px solid rgb(206, 206, 206);
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            .uploaded-files {
+                min-height: 200px;
+                margin-top: 20px;
+                ;
+                padding: 30px 20px;
+                border: 2px solid rgb(233, 233, 233);
+                border-radius: 7px;
+                background-color: white;
+                .detail-file {
+                    border-bottom: 1px solid grey;
+                    margin-top: 10px;
+                    i {
+                        float: left;
+                        margin-right: 10px;
+                    }
+                }
+                .f-z {
+                    font-size: 25px;
+                }
+            }
+        }
+        .column-right {
+            float: right;
+            width: 29%;
+            .list {
+                background-color: white;
+                padding: 10px 0;
+                h3 {
+                    padding: 10px 20px;
+                }
+                ul {
+                    margin: 0 20px;
+                    padding: 0;
+                    li {
+                        padding: 0 10px;
+                        margin: 0;
+                        line-height: 48px;
+                        height: 50px;
+                        list-style-type: none;
+                        overflow: auto;
+                        border: 1px solid rgb(241, 241, 241);
+                        .f-l {
+                            float: left;
+                        }
+                        .f-r {
+                            float: right;
+                        }
+                    }
+                    li:nth-child(odd) {
+                        background: rgb(240, 240, 240)
+                    }
+                    li:nth-child(even) {
+                        background: #fcfcfc
+                    }
+                }
+                .progress{
+                    padding:0 20px;
+                }
+            }
+            .assigned {
+                margin-top: 30px;
+                background-color: white;
+                padding: 20px 0;
+                .header {
+                    margin: 0 20px;
+                    overflow: auto;
+                    .btn-add {
+                        width: 70px;
+                        height: 30px;
+                        font-size: 17px;
+                    }
+                    @media (max-width:768px) {
+                        .btn-add {
+                            margin: 7px 0;
+                            float: left;
+                        }
+                    }
+                }
+                .main {
+                    margin: 20px;
+                    .row {
+                        margin-top: 20px;
+                    }
+                }
+            }
+            
+        }
+    }
+    @media (max-width:540px) {
+        .m-y {
+            margin: 10px 5px;
+            .header-hospital {}
+            .column-left {
+                width: 49.5%;
+                .uploaded-img {
+                    .container-img {
+                        width: 80%;
+    
+                    }
+                }
+                .text-hospital {
+                    span {
+                        @include limit_lines(5);
+                    }
+                }
+            }
+            .column-right {
+                width: 49.5%;
+            }
+        }
+    }
+}

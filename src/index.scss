@@ -19,5 +19,20 @@ code {
 }
 h1,h2,h3,h4,h5,h6{
   margin: 0;
-  padding: 0;
+  padding: 0
+  ;
+}
+
+.btn {
+  color: white;
+  border-radius: 20px;
+  background-color: #00beff;
+  border: none;
+  font-size: 20px;
+}
+.f-l{
+  float: left;
+}
+.f-r{
+  float: right;
 }
